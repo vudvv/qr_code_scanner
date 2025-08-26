@@ -25,6 +25,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
+    namespace 'net.touchcapture.qr.flutterqr'
     compileSdk 33
 
     sourceSets {
@@ -48,9 +49,6 @@ android {
         // Sets Java compatibility to Java 11
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
-    }
-    if (project.android.hasProperty('namespace')) {
-        namespace 'net.touchcapture.qr.flutterqr'
     }
 }
 
