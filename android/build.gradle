@@ -28,6 +28,11 @@ android {
     namespace 'net.touchcapture.qr.flutterqr'
     compileSdk 33
 
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
